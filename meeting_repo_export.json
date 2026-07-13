@@ -1,0 +1,12 @@
+{
+  "query_dates": ["2026-07-08", "2026-07-09"],
+  "database_id": "3520eb2d-2b67-8020-b832-000b01d6184f",
+  "note": "To retrieve meeting data from Notion, use one of these methods:",
+  "methods": [
+    "1. Use Notion web interface to view the Meeting Repo database directly",
+    "2. Use Notion API with proper authentication token",
+    "3. Export via Notion's built-in export feature",
+    "4. Use connected Notion integration in Zo settings"
+  ],
+  "limitation": "The Notion MCP tools are currently returning 404 errors. Retrying with alternative approach..."
+}

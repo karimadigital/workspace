@@ -1,0 +1,24 @@
+{
+  "date": "2026-03-16",
+  "session": "morning",
+  "tasks": {
+    "do_today": [
+      {"task": "Copy all Headstream answers into grant tracker in Notion", "business_area": "🧠 CrashOut Diary", "est_time": "🕑 30–60 min", "priority": "High"},
+      {"task": "Schedule and run CrashOutDiary product phases working session with Claude", "business_area": "🧠 CrashOut Diary", "est_time": "🕒 1–2 hrs", "priority": "High"}
+    ],
+    "up_next_due_today": [
+      {"task": "Write and send investor update email", "est_time": "🕑 30–60 min"},
+      {"task": "Record video for Headstream application", "est_time": "🕒 1–2 hrs"},
+      {"task": "Build grant tracker workflow", "est_time": ""},
+      {"task": "Build automated marketing funnel", "est_time": ""},
+      {"task": "Email audience to find merch collab partner", "est_time": "🕐 15–30 min"},
+      {"task": "Incorporate All Da Memes into current Karima Digital marketing", "est_time": ""},
+      {"task": "Write prompts for grant tracker agents", "est_time": ""},
+      {"task": "Define Zo search criteria for grant discovery", "est_time": "🕐 15–30 min"}
+    ],
+    "blocked": [],
+    "waiting_room_count": 54
+  },
+  "current_step": "1-sent",
+  "created_at": "2026-03-16T07:35:00-04:00"
+}

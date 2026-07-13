@@ -1,0 +1,123 @@
+{
+  "database_id": "3520eb2d-2b67-8020-b832-000b01d6184f",
+  "database_name": "Meeting Repo",
+  "query_dates": ["2026-07-08", "2026-07-09"],
+  "total_meetings": 11,
+  "note": "Full transcripts are available in Notion but truncated in export. Meeting data includes title, date, guests, and email fields from database properties.",
+  "meetings": [
+    {
+      "id": 1,
+      "date": "2026-07-08",
+      "title": "AI Employee Lab",
+      "time": "TBD",
+      "guests": [],
+      "email": [],
+      "summary": ""
+    },
+    {
+      "id": 2,
+      "date": "2026-07-08",
+      "title": "5T AI Council: Co-Work Session",
+      "time": "TBD",
+      "guests": ["Karima Digital", "Tiffany Moore-Jackson"],
+      "email": ["hello@karima.digital", "tiffany.moore@5tmanagement.com"],
+      "summary": ""
+    },
+    {
+      "id": 3,
+      "date": "2026-07-08",
+      "title": "Lexus Long-Jackson and Karima Williams",
+      "time": "4:30 PM - 4:40 PM",
+      "location": "Google Meet",
+      "guests": ["Karima Digital", "Lexus Long-Jackson", "Deona Thomas", "Rex James"],
+      "email": ["hello@karima.digital", "lexus.long-jackson@5tmanagement.com", "deona@5tmanagement.com"],
+      "event_type": "5T Council Check In: AI Expert Progress",
+      "summary": ""
+    },
+    {
+      "id": 4,
+      "date": "2026-07-08",
+      "title": "David James and Karima Williams",
+      "time": "4:40 PM - 5:00 PM",
+      "guests": ["Karima Digital", "David James", "Deona Thomas"],
+      "email": ["hello@karima.digital", "david.james@5tmanagement.com", "deona@5tmanagement.com"],
+      "event_type": "5T Council Check In: AI Expert Progress",
+      "summary": ""
+    },
+    {
+      "id": 5,
+      "date": "2026-07-08",
+      "title": "Saundra B. and Karima Williams",
+      "time": "5:20 PM - 5:30 PM",
+      "guests": ["Karima Digital", "Saundra B."],
+      "email": ["hello@karima.digital", "saundra.bethley@5tmsp.com"],
+      "event_type": "5T Council Check In: AI Expert Progress",
+      "summary": ""
+    },
+    {
+      "id": 6,
+      "date": "2026-07-08",
+      "title": "David Turner and Karima Williams",
+      "time": "5:30 PM - 5:40 PM",
+      "guests": ["Karima Digital", "David Turner", "Deona Thomas"],
+      "email": ["hello@karima.digital", "david.turner@5tmanagement.com", "deona@5tmanagement.com"],
+      "event_type": "5T Council Check In: AI Expert Progress",
+      "summary": ""
+    },
+    {
+      "id": 7,
+      "date": "2026-07-08",
+      "title": "Michelle Gee and Karima Williams",
+      "time": "5:45 PM - 5:55 PM",
+      "guests": ["Karima Digital", "Michelle Gee", "Deona Thomas"],
+      "email": ["hello@karima.digital", "michelle.gee@5tmanagement.com", "deona@5tmanagement.com"],
+      "event_type": "5T Council Check In: AI Expert Progress",
+      "summary": ""
+    },
+    {
+      "id": 8,
+      "date": "2026-07-08",
+      "title": "Meeting Transcription",
+      "time": "TBD",
+      "guests": ["Iman", "Jerry Baffour", "KRYS", "Karima Digital", "Kennaxai", "Kim", "Lerato & Adams", "Renee Rose"],
+      "email": ["hello@karima.digital"],
+      "summary": ""
+    },
+    {
+      "id": 9,
+      "date": "2026-07-09",
+      "title": "Connecting To Source",
+      "time": "6:00 AM - 6:50 AM",
+      "guests": [],
+      "email": [],
+      "description": "https://claude.ai/public/artifacts/0d249522-98b1-4ee7-9301-7c79fdbb5cd1",
+      "summary": ""
+    },
+    {
+      "id": 10,
+      "date": "2026-07-09",
+      "title": "Traveling TO",
+      "time": "9:15 AM - 10:10 AM",
+      "guests": [],
+      "email": [],
+      "summary": ""
+    },
+    {
+      "id": 11,
+      "date": "2026-07-09",
+      "title": "SWADC - Intro To AI / AI Ethics - Rapid Labs",
+      "time": "10:15 AM - 12:30 PM",
+      "location": "Westminster Presbyterian Church, 400 I St SW, Washington, DC",
+      "guests": ["Karima Digital", "Addy", "Darlene"],
+      "email": ["hello@karima.digital", "addy@rapidlabz.com", "darlene@truststeamplus.org"],
+      "arrival_time": "10:15 AM",
+      "session_time": "10:30 AM – 12:30 PM",
+      "tech": "Projector available",
+      "audience": "16–17 year-olds",
+      "theme_focus": "Intro to AI / AI Ethics",
+      "summary": ""
+    }
+  ],
+  "data_source": "Karima's Notion Meeting Repo (collection://3520eb2d-2b67-8020-b832-000b01d6184f)",
+  "limitations": "Full meeting transcripts/content are stored in Notion but are not fully extracted in machine-readable format due to MCP API limitations. To view complete transcripts, please open each meeting page in Notion directly."
+}
