@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-17",
+  "awaiting": "prep_selection",
+  "asked_at": "2026-09-16T20:30:00-04:00",
+  "meetings": [
+    {
+      "n": 1,
+      "title": "Lunch with Ezra",
+      "start": "2026-09-17T10:45:00-04:00",
+      "calendar": "hello@karima.digital",
+      "attendees": [],
+      "attendee_count": null,
+      "starred": false,
+      "event_id": "koav66ggik0j85k84hvgu8pqkg"
+    },
+    {
+      "n": 2,
+      "title": "[OPTIONAL] Sales & Outreach Clinic With Success Team",
+      "start": "2026-09-17T11:00:00-04:00",
+      "calendar": "Premium Ghostwriting Academy",
+      "attendees": [],
+      "attendee_count": null,
+      "starred": false,
+      "event_id": "_71mn6pph71s6sr3o60r40ob4chincpbeegn66rrd_20260917T150000Z"
+    }
+  ]
+}

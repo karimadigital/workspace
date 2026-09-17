@@ -1,0 +1,32 @@
+{
+  "processed": [
+    {
+      "eventId": "s58r795qlcf1uettnae43l9pqs",
+      "meetingTitle": "Karima Williams and Michael Marcial",
+      "attendee": "michael@collected.cash",
+      "eventStart": "2026-09-09T17:00:00-04:00",
+      "eventEnd": "2026-09-09T17:45:00-04:00",
+      "processedAt": "2026-09-09T19:05:00-04:00",
+      "source": "Notion transcript",
+      "followUpsCaptured": 4,
+      "drafts": [
+        "Chief Of Staff/post-meeting-drafts/2026-09-09-1745-karima-williams-and-michael-marcial-progress-update.md"
+      ],
+      "approvalNeeded": "Populate verified results after the two-week positioning and content experiments before sending."
+    },
+    {
+      "eventId": "_clr78baa8ds7gca8d13j8uakb9ojeoi0clr6arjkecn6ot9edlgg",
+      "meetingTitle": "Learn & Build: AI Workflow Session",
+      "attendee": "hello@karima.digital",
+      "eventStart": "2026-09-11T12:00:00-04:00",
+      "eventEnd": "2026-09-11T14:00:00-04:00",
+      "processedAt": "2026-09-11T17:05:00-04:00",
+      "source": "Notion transcript",
+      "followUpsCaptured": 4,
+      "drafts": [
+        "Chief Of Staff/post-meeting-drafts/2026-09-11-1400-learn-build-ai-workflow-session-community-share.md"
+      ],
+      "approvalNeeded": "Approve the CKR community share before posting. Gmail was disconnected, so no existing-thread reply was created."
+    }
+  ]
+}

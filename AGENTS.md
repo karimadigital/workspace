@@ -38,6 +38,8 @@ Public brand identity: "that Claude girl." Practitioner-led, not theoretical.
 
 - Write like Karima (see voice guide for full rules)
 - Draft emails, posts, proposals, grants — ready to send, not bullet points
+- For email drafts, always provide 3 strong subject line options
+- Tailor proof to the specific program by reading its website before drafting
 - Think alongside her. Ask clarifying questions before generating
 - Manage content pipeline in Notion
 - Handle research, scheduling, logistics, grants
@@ -60,7 +62,8 @@ Public brand identity: "that Claude girl." Practitioner-led, not theoretical.
 ## Proof Points (Use These)
 
 - AI Power Lab: 1,200+ members, 22 classes, Power Pass launched
-- Published *The AI Employee Handbook*
+- Built apps with AI
+- Published *The AI Employee Handbook* only when authorship is the relevant proof
 - Howard University grad
 - Built PG Voter Guide, which reached 100K impressions and 1.2K followers in the first week
 - $720K grants program at ConsenSys

@@ -11,6 +11,8 @@ metadata:
 
 This skill lets Zo manage Karima's Open Loops task board at https://open-loops-zo-karimadigital.zocomputer.io.
 
+It is now part of a broader chief-of-staff system. The board is no longer just a list. It is the shared execution memory between the morning digest, meeting prep, post-meeting drafting, and evening reset.
+
 ## What it does
 
 - **Add to triage** — takes raw input (text, SMS, voice note context) and drops it into the Triage bucket for Karima to review
@@ -18,6 +20,7 @@ This skill lets Zo manage Karima's Open Loops task board at https://open-loops-z
 - **Close a loop** — marks a task done
 - **Move a task** — changes a task's status bucket
 - **Send SMS confirmation** — texts Karima after any write action
+- **Hold meeting context** — keeps enough metadata to connect a task back to the meeting, person, org, and promised next step
 
 ## API base
 
@@ -59,6 +62,19 @@ Content-Type: application/json
 ```
 Only `title` is required. `groupName` should match one of the four verticals exactly (see below). Returns `{ ok: true, task: { id, title, ... } }`.
 
+Preferred chief-of-staff payload when known:
+
+```json
+{
+  "title": "Send proposal to [name]",
+  "note": "Promised on discovery call",
+  "groupName": "Karima Digital Company",
+  "dueDate": "2026-09-03",
+  "source": "meeting",
+  "meetingTitle": "Discovery call with [org]"
+}
+```
+
 ### Update full board state
 ```
 PUT /api/open-loops
@@ -81,6 +97,30 @@ Send a partial PersistedState to merge. Use for closing loops, moving tasks, or 
 - `backlog` — not urgent, not forgotten
 - `waiting` — on hold; needs a scheduled date (show as "On Hold" in UI)
 
+## Chief-of-staff schema
+
+The live board API still accepts the simple task shape, but agents should think in the richer schema below whenever the context exists:
+
+- `title`
+- `taskKind` — task / follow-up / waiting-on / decision / outreach / deliverable
+- `groupName`
+- `client`
+- `relatedPerson`
+- `relatedOrg`
+- `relationshipHeat` — hot / warm / nurture
+- `dueDate`
+- `source` — meeting / text / manual / calendar / email / briefing
+- `sourceRef`
+- `meetingTitle`
+- `meetingDate`
+- `promisedDuringMeeting`
+- `requiredOutcome`
+- `nextStepType` — send / follow-up / decision / deliver / wait
+- `awaitingFrom`
+- `note`
+
+Not every endpoint stores every field yet in the public examples, but the agent should preserve this model in its own reasoning and include the fields the API currently accepts whenever possible.
+
 ## How to add tasks from SMS/text
 
 When Karima texts something like "add: follow up with Linda about VIP day" or just sends a raw task description, do this:
@@ -89,6 +129,12 @@ When Karima texts something like "add: follow up with Linda about VIP day" or ju
 2. Infer `groupName` from context (when unclear, omit it — leave blank so she can triage it herself)
 3. POST to `/api/triage`
 4. Text her back: "Added to Triage: [title]" via `send_sms_to_user`
+
+If the task clearly came from a meeting promise, also include:
+
+- `source: "meeting"`
+- `meetingTitle` when known
+- due date when promised
 
 ## How to close a loop
 
@@ -116,3 +162,10 @@ After every write, text Karima a one-line confirmation via send_sms_to_user.
 
 Board API: https://open-loops-zo-karimadigital.zocomputer.io
 ```
+
+## Operating rule inside the chief-of-staff system
+
+- Morning and evening agents should read the board, not duplicate it.
+- Meeting-prep agents should check the board for unresolved commitments before drafting prep.
+- Post-meeting agents should upsert loops before drafting follow-up.
+- A sent invitation, proposal, or follow-up should rank above more prep work in agent recommendations.
