@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+# secret: shared API token (never commit)
+agents/.opp-token
+data/opportunities.db
+data/opportunities.db-*
+data/notion-sync.db
+data/notion-sync.db-*

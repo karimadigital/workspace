@@ -1,0 +1,6 @@
+{
+  "apiBase": "http://localhost:55707",
+  "dashboardUrl": "https://opportunities-zo-karimadigital.zo.computer",
+  "tokenFile": "/home/workspace/Projects/opportunities-zo/agents/.opp-token",
+  "notes": "Agents run ON the Zo server, so they write over localhost (apiBase) to bypass the private-site login gate. Read the bearer token from tokenFile: Authorization: Bearer $(cat /home/workspace/Projects/opportunities-zo/agents/.opp-token). dashboardUrl is the public URL for Karima's browser only, never for agent writes."
+}

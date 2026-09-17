@@ -1,0 +1,9 @@
+{
+  "databaseUrl": "https://app.notion.com/p/1361d43117994b628da94f142f3fb424",
+  "dataSourceId": "ad8f8c4f-26a5-48be-9e32-0c6a8afd5298",
+  "dataSourceUrl": "collection://ad8f8c4f-26a5-48be-9e32-0c6a8afd5298",
+  "parentPage": "Karima Digital's Work Space / Workspace Pages",
+  "createdAt": "2026-09-01",
+  "notes": "Created via the OAuth-connected Notion MCP (mcpo client at /etc/zo/mcpo/clients/notion.ts), NOT via agents/notion-sync.ts. notion-sync.ts still needs a raw NOTION_API_KEY and is not running. Each page body holds the drafted message under a 'Drafted message' heading. 'Approved' checkbox = Karima's green light to draft the email. Populated from http://localhost:55707/api/state, excluding status=Passed.",
+  "populateScript": "/tmp/fill.ts (rerun to refresh; will duplicate rows, dedupe on Opp ID first)"
+}
